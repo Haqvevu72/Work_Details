@@ -1,0 +1,170 @@
+@import url('/Asserts/Fonts/Heebo/static/Heebo-Regular.ttf');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header style starts ... */
+    .menu{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: right;
+        padding: 27px 60px;
+        gap: 36px;
+        font-family: 'Heebo' , sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .menu li:nth-child(4){
+        display: none;
+    }
+
+    @media screen and (max-width:600px){
+        
+        .menu li:nth-child(1),.menu li:nth-child(2),.menu li:nth-child(3){
+            display: none;
+        }
+
+        .menu li:nth-child(4){
+            display: block;
+        }
+    }
+
+
+    .menu a:hover{
+        cursor: pointer;
+    }
+/* Header style ends ... */
+
+/* --------------------------------------  */
+
+/* Main style starts ... */
+    .work-detail{
+        display:flex;
+        flex-direction: column;
+        list-style: none;
+        font-family: 'Heebo' , sans-serif;
+        padding: 0 17px;
+        width:100%;
+        gap: 24px;
+    }
+
+    
+    .work-detail h1{
+        color: var(--Dark-Color, #21243D);
+        
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px; /* 133.333% */
+    }
+    
+    .description{
+        display:flex;
+        flex-direction: column;
+        list-style: none;
+        gap: 23px;
+    }
+    
+    .description .p-1 span:nth-child(1){
+        background-color: #FF7C7C;
+        color: #FFF;
+        
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 60px; /* 333.333% */
+        padding: 7px;
+        border-radius: 15px;
+    }
+    
+    .description .p-1 span:nth-child(2){
+        color: var(--Dark-Color, #21243D);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-left: 24px;
+    }
+    
+    .description .p-1 span:nth-child(3){
+        color: var(--Dark-Color, #21243D);
+        margin-left:83px;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    
+    .description .p-2{
+        color: #000;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px;
+    }
+    
+    @media screen and (min-width:1000px)
+    {
+        .work-detail{
+            padding: 80px 350px;
+        }
+        
+        .description .img-1{
+            content: url('\\Asserts\\Images\\ bigdash.png')
+        }
+
+        .description .img-2{
+            content: url('/Asserts/Images/bigcar.png')
+        }
+
+        .description .img-3{
+            content: url('\\Asserts\\Images\\ bigorder.png')
+        }
+
+    }
+
+    @media screen and (min-width:507px)
+    {
+        .description .p-1 span:nth-child(3){
+            margin-left: 0;
+        }
+    }
+    
+    /* Main style ends ... */
+    
+    /* --------------------------------------  */
+    
+    /* Footer style starts ... */
+    .contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 54px;
+    }
+
+    .contact p{
+        color: var(--Dark, #21243D);
+        text-align: center;
+        font-family: 'Heebo' ,sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .contact .social-media{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: center;
+        gap: 35px;
+        line-height: 34px;
+        padding-top: 50px;
+    }
+/* Footer style ends ... */
+
